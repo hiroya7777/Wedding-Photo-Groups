@@ -11,7 +11,7 @@ jobs:
       - APP_KEY: base64:Xj7TuHgNI2WTfPCmlH3YgXnJOgRP3Svdj7uP+ArXNMY=
       - DB_CONNECTION: circleci
 
-    working_directory: ~/laravel
+    working_directory: ~/Bicycle-parking-lot
 
     steps:
       - checkout
