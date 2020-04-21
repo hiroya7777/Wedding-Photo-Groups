@@ -31,9 +31,9 @@ jobs:
             - v1-dependencies-{{ checksum "Bicycle-parking-lot/composer.json" }}
             - v1-dependencies-
 
-      - run:
-          name: composer install -n --prefer-dist
-          # command: composer install -n --prefer-dist
+      # - run:
+      #     name: composer install
+      #     command: composer install -n --prefer-dist
 
       - save_cache:
           paths:
