@@ -11,7 +11,7 @@ jobs:
       - APP_KEY: base64:Xj7TuHgNI2WTfPCmlH3YgXnJOgRP3Svdj7uP+ArXNMY=
       - DB_CONNECTION: circleci
 
-    working_directory: ~/repo
+    working_directory: ~/laravel
 
     steps:
       - checkout
@@ -33,7 +33,6 @@ jobs:
 
       - run:
           name: composer install
-          working_directory: laravel
           command: composer install -n --prefer-dist
 
       - save_cache:
