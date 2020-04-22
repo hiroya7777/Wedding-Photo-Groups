@@ -24,7 +24,7 @@ class CreateBicycleParkingLotsTable extends Migration
             $table->time('utilization_time')->nullable()->comment('利用時間');
             $table->time('reception_time')->nullable()->comment('受付時間');
             $table->integer('on_foot')->comment('徒歩');
-            $table->string('image_name')->nullable()->comment('画像url');
+            $table->string('image_name')->nullable()->comment('画像名');
             $table->string('image_url')->nullable()->comment('画像url');
             $table->timestamps();
         });
